@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 var functions = {};
 const databaseFile = 'database/data.json';
@@ -112,4 +112,4 @@ functions.delete = (collection, key) => {
   });
 }
 
-module.exports = functions;
+export default functions;
