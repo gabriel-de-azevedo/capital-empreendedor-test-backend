@@ -1,9 +1,9 @@
-import express from 'express';
+import express from "express";
 
 var router = express.Router();
 
-router.get('/', function (req, res, next) {
-  res.send({ message: 'OK' });
+router.get("/", function (req, res, next) {
+  res.send({ message: "OK" });
 });
 
 export default router;
