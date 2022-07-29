@@ -1,9 +1,9 @@
 import functions from '../../database/functions.js';
 
 export const getOneUser = async (req, res) => {
-  const { key } = req.params;
-  const user = await functions.getOne('users', key);
-  const { opportunities } = await functions.getOne('opportunities', key);
+  const { user_id } = req.params;
+  const user = await functions.getOne('users', user_id);
+  const { opportunities } = await functions.getOne('opportunities', user_id);
 
   user.opportunities = opportunities;
 
