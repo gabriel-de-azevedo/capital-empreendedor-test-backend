@@ -5,8 +5,8 @@ import { verifyUserEmail } from '../../middlewares/users.middlewares/verifyUserE
 
 const usersRouter = Router();
 
-usersRouter.get('/users', listAllUsers);
+usersRouter.get('', listAllUsers);
 
-usersRouter.get('/users/:user_email', verifyUserEmail, getOneUser);
+usersRouter.get('/:user_email', verifyUserEmail, getOneUser);
 
 export default usersRouter;
