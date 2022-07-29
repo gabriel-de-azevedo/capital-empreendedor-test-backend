@@ -1,13 +1,13 @@
 import { Router } from 'express';
 
-const userRouter = Router();
+const usersRouter = Router();
 
-userRouter.get('/users', (req, res, next) => res.send({ users: 'GET' }));
+usersRouter.get('/users', (req, res, next) => res.send({ users: 'GET' }));
 
-userRouter.get('/users/:key', (req, res, next) => {
+usersRouter.get('/users/:key', (req, res, next) => {
   const { key } = req.params;
 
   return res.send({ users: `GET ${key}` });
 });
 
-export default userRouter;
+export default usersRouter;
