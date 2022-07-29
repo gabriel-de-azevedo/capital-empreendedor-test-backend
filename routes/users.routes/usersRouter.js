@@ -7,6 +7,6 @@ const usersRouter = Router();
 
 usersRouter.get('/users', listAllUsers);
 
-usersRouter.get('/users/:user_id', verifyUserId, getOneUser);
+usersRouter.get('/users/:user_email', verifyUserId, getOneUser);
 
 export default usersRouter;
