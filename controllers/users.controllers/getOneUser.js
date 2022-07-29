@@ -8,5 +8,5 @@ export const getOneUser = async (req, res) => {
 
   user.opportunities = opportunities;
 
-  return res.status(200).json(user);
+  return res.status(200).json({ user });
 };
