@@ -1,8 +1,7 @@
 import functions from '../../database/functions.js';
 
 export const verifyOpportunityName = async (req, res, next) => {
-  const { opportunity_name } = req.params;
-  const { user_email } = req.params;
+  const { user_email, opportunity_name } = req.params;
   const { opportunities } = await functions.getOne('opportunities', user_email);
 
   let opportunityNames = [];
