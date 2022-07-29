@@ -5,6 +5,6 @@ import opportunitiesRouter from './opportunities.routes/opportunitiesRouter.js';
 var router = express.Router();
 
 router.use('/users', usersRouter);
-router.use(opportunitiesRouter);
+usersRouter.use(opportunitiesRouter);
 
 export default router;

@@ -6,7 +6,7 @@ import { verifyUserEmail } from '../../middlewares/users.middlewares/verifyUserE
 const opportunitiesRouter = Router();
 
 opportunitiesRouter.patch(
-  '/users/:user_email/opportunities/:opportunity_name',
+  '/:user_email/opportunities/:opportunity_name',
   verifyUserEmail,
   verifyOpportunityName,
   patchOpportunityStatus
