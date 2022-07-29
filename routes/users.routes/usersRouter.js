@@ -1,12 +1,12 @@
 import { Router } from 'express';
 import { getOneUser } from '../../controllers/users.controllers/getOneUser.js';
 import { listAllUsers } from '../../controllers/users.controllers/listAllUsers.js';
-import { verifyUserId } from '../../middlewares/users.middlewares/verifyUserId.js';
+import { verifyUserEmail } from '../../middlewares/users.middlewares/verifyUserEmail.js';
 
 const usersRouter = Router();
 
 usersRouter.get('/users', listAllUsers);
 
-usersRouter.get('/users/:user_email', verifyUserId, getOneUser);
+usersRouter.get('/users/:user_email', verifyUserEmail, getOneUser);
 
 export default usersRouter;
