@@ -6,7 +6,5 @@ export const getOneUser = async (req, res) => {
 
   const { opportunities } = await functions.getOne('opportunities', user_email);
 
-  user.opportunities = opportunities;
-
-  return res.status(200).json({ user });
+  return res.status(200).json({ user, opportunities });
 };
