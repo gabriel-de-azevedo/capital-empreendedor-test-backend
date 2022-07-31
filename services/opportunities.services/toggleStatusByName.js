@@ -1,7 +1,4 @@
-export const toggleStatusByName = (req) => {
-  const { opportunity_name } = req.params;
-  const { opportunities } = req;
-
+export const toggleStatusByName = (opportunities, opportunity_name) => {
   opportunities.map((opp) => {
     if (opp.name == opportunity_name) {
       opp.isActive = !opp.isActive;
