@@ -1,5 +1,5 @@
 /**
- * Toggles the isActive property from the target_opportunity
+ * Toggles the isActive property from target_opportunity
  * Returns an updated list with all_opportunities
  */
 
