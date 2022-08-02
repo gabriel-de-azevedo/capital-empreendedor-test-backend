@@ -1,5 +1,9 @@
 import * as yup from 'yup';
 
+/**
+ *
+ */
+
 export const userSchema = yup.object().shape({
   name: yup.string().required().typeError('name must be a string'),
   email: yup.string().required().typeError('email must be a string').email(),

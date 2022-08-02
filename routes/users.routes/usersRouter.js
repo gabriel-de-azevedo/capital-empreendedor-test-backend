@@ -9,12 +9,7 @@ import { validateUserEmail } from '../../middlewares/users.middlewares/validateU
 import { userSchema } from '../../models/users.models/userSchema.js';
 
 /**
- * Defines the listAllUsers controller to the first get route
- * Defines the getOneUser controller to the second
- * Adds the findUserEmail middleware to it
- * Defines the addUser controller to the post route
- * Adds the validateSchema middleware to it
- * Adds the validateUserEmail middleware to it
+ *
  */
 
 const usersRouter = Router();

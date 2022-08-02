@@ -1,9 +1,7 @@
 import functions from '../../database/functions.js';
 
 /**
- * Gets the user retrived by the findUserEmail middleware
- * Retrieves user_email from the URL
- * Uses functions.getOne to retrive a the user's opportunities
+ *
  */
 
 export const getOneUser = async (req, res) => {

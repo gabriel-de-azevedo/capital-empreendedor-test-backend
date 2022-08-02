@@ -1,10 +1,7 @@
 import functions from '../../database/functions.js';
 
 /**
- * Retrieves user_email from the URL
- * Uses functions.getOne to retrive a single user
- * Verifies if an user was found, returning an error if not
- * Stores the user on the request object
+ *
  */
 
 export const findUserEmail = async (req, res, next) => {

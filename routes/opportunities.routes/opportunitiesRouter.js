@@ -8,9 +8,7 @@ import { findUserEmail } from '../../middlewares/users.middlewares/findUserEmail
 import { opportunitySchema } from '../../models/opportunities.models/opportunitySchema.js';
 
 /**
- * Defines the patchOpportunityStatus controller to the route
- * Adds the findUserEmail middleware to it
- * Also adds the findOpportunityName middleware to it
+ *
  */
 
 const opportunitiesRouter = Router();
