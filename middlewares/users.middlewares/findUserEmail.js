@@ -12,7 +12,7 @@ export const findUserEmail = async (req, res, next) => {
   const user = await functions.getOne('users', user_email);
 
   if (!user) {
-    return res.status(404).json({ message: 'user not found' });
+    return res.status(404).json({ errors: ['user not found'] });
   }
 
   req.user = user;

@@ -18,7 +18,7 @@ export const findOpportunityName = async (req, res, next) => {
   });
 
   if (!opportunityNames.includes(opportunity_name)) {
-    return res.status(404).json({ message: 'opportunity not found' });
+    return res.status(404).json({ errors: ['opportunity not found'] });
   }
 
   req.opportunities = opportunities;
