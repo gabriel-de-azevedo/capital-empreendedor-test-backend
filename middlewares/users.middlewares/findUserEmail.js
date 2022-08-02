@@ -7,7 +7,7 @@ import functions from '../../database/functions.js';
  * Stores the user on the request object
  */
 
-export const verifyUserEmail = async (req, res, next) => {
+export const findUserEmail = async (req, res, next) => {
   const { user_email } = req.params;
   const user = await functions.getOne('users', user_email);
 

@@ -8,7 +8,7 @@ import functions from '../../database/functions.js';
  * Stores the user's opportunities on the request object
  */
 
-export const verifyOpportunityName = async (req, res, next) => {
+export const findOpportunityName = async (req, res, next) => {
   const { user_email, opportunity_name } = req.params;
   const { opportunities } = await functions.getOne('opportunities', user_email);
 

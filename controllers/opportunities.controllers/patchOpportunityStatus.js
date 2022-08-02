@@ -2,7 +2,7 @@ import functions from '../../database/functions.js';
 import { toggleStatusByName } from '../../services/opportunities.services/toggleStatusByName.js';
 
 /**
- * Gets the opportunities retrived by the VerifyOpportunityName middleware
+ * Gets the opportunities retrived by the findOpportunityName middleware
  * Retrieves user_email and opportunity_name from the URL
  * Calls the toggleStatusByName service to make the necessary changes
  * Uses functions.update to overwrite the user's opportunities
