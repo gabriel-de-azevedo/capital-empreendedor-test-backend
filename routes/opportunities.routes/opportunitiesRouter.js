@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { addOpportunity } from '../../controllers/opportunities.controllers/addOpportunity.js';
+import { deleteOpportunity } from '../../controllers/opportunities.controllers/deleteOpportunity.js';
 import { patchOpportunityStatus } from '../../controllers/opportunities.controllers/patchOpportunityStatus.js';
 import { validateSchema } from '../../middlewares/general.middlewares/validateSchema.js';
 import { findOpportunityName } from '../../middlewares/opportunities.middlewares/findOpportunityName.js';
@@ -25,6 +26,13 @@ opportunitiesRouter.patch(
   findUserEmail,
   findOpportunityName,
   patchOpportunityStatus
+);
+
+opportunitiesRouter.delete(
+  '/:user_email/opportunities/:opportunity_name',
+  findUserEmail,
+  findOpportunityName,
+  deleteOpportunity
 );
 
 export default opportunitiesRouter;
