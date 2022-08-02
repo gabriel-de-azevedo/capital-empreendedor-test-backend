@@ -15,18 +15,18 @@ import { opportunitySchema } from '../../models/opportunities.models/opportunity
 
 const opportunitiesRouter = Router();
 
-opportunitiesRouter.patch(
-  '/:user_email/opportunities/:opportunity_name',
-  findUserEmail,
-  findOpportunityName,
-  patchOpportunityStatus
-);
-
 opportunitiesRouter.post(
   '/:user_email/opportunities/',
   validateSchema(opportunitySchema),
   validateOpportunityName,
   addOpportunity
+);
+
+opportunitiesRouter.patch(
+  '/:user_email/opportunities/:opportunity_name',
+  findUserEmail,
+  findOpportunityName,
+  patchOpportunityStatus
 );
 
 export default opportunitiesRouter;

@@ -18,10 +18,10 @@ import { userSchema } from '../../models/users.models/userSchema.js';
 
 const usersRouter = Router();
 
+usersRouter.post('', validateSchema(userSchema), validateUserEmail, addUser);
+
 usersRouter.get('', listAllUsers);
 
 usersRouter.get('/:user_email', findUserEmail, getOneUser);
-
-usersRouter.post('', validateSchema(userSchema), validateUserEmail, addUser);
 
 export default usersRouter;
