@@ -3,7 +3,7 @@
  */
 
 export const handleDelete = (req) => {
-  let { all_opportunities, target_opportunity } = req;
+  const { all_opportunities, target_opportunity } = req;
 
   const index = all_opportunities.indexOf(target_opportunity);
 
