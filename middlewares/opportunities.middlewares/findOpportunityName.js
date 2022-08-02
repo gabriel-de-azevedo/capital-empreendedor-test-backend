@@ -12,16 +12,19 @@ export const findOpportunityName = async (req, res, next) => {
   const { user_email, opportunity_name } = req.params;
   const { opportunities } = await functions.getOne('opportunities', user_email);
 
-  let opportunityNames = [];
+  let found;
   opportunities.forEach((opp) => {
-    opportunityNames.push(opp.name);
+    if (opp.name === opportunity_name) {
+      found = opp;
+    }
   });
 
-  if (!opportunityNames.includes(opportunity_name)) {
+  if (!found) {
     return res.status(404).json({ errors: ['opportunity not found'] });
   }
 
-  req.opportunities = opportunities;
+  req.target_opportunity = found;
+  req.all_opportunities = opportunities;
 
   return next();
 };
