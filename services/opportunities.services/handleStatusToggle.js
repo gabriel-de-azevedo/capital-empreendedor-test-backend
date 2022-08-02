@@ -3,8 +3,7 @@
  */
 
 export const handleStatusToggle = (req) => {
-  let { target_opportunity } = req;
-  let { all_opportunities } = req;
+  let { all_opportunities, target_opportunity } = req;
 
   const index = all_opportunities.indexOf(target_opportunity);
 

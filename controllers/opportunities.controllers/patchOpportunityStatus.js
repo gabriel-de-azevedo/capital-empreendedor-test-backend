@@ -10,9 +10,9 @@ export const patchOpportunityStatus = async (req, res) => {
 
   const opportunities = handleStatusToggle(req);
 
-  const updated = await functions.update('opportunities', user_email, {
+  await functions.update('opportunities', user_email, {
     opportunities,
   });
 
-  return res.status(200).json(updated);
+  return res.status(200).json({ opportunities });
 };
