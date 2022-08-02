@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 
-export const userSchema = yup.object().shape({
+export const opportunitySchema = yup.object().shape({
   name: yup.string().required().typeError(),
   limit: yup.number().required().typeError(),
   interest: yup.number().required().typeError(),
