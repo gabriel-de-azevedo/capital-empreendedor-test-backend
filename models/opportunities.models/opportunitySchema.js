@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 
 /**
- *
+ * Exports an object shape that represents an opportunity
  */
 
 export const opportunitySchema = yup.object().shape({

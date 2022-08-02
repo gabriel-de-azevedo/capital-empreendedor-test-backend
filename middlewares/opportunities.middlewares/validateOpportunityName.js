@@ -1,7 +1,7 @@
 import functions from '../../database/functions.js';
 
 /**
- *
+ * Checks if the name on the request body is already in use
  */
 
 export const validateOpportunityName = async (req, res, next) => {

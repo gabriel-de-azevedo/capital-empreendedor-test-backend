@@ -1,5 +1,6 @@
 /**
- *
+ * Toggles the isActive property from the target_opportunity
+ * Returns an updated list with all_opportunities
  */
 
 export const handleStatusToggle = (req) => {

@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 
 /**
- *
+ * Exports an object shape that represents a user
  */
 
 export const userSchema = yup.object().shape({

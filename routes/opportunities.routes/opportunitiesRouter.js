@@ -9,7 +9,7 @@ import { findUserEmail } from '../../middlewares/users.middlewares/findUserEmail
 import { opportunitySchema } from '../../models/opportunities.models/opportunitySchema.js';
 
 /**
- *
+ * Adds all controller and middlewares to the opportunities routes
  */
 
 const opportunitiesRouter = Router();

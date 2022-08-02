@@ -2,7 +2,8 @@ import functions from '../../database/functions.js';
 import { handleStatusToggle } from '../../services/opportunities.services/handleStatusToggle.js';
 
 /**
- *
+ * Toggles target_opportunity's status trough the handleStatusToggle service
+ * Uses the user_email on the URL to update it's opportunities on the database
  */
 
 export const patchOpportunityStatus = async (req, res) => {

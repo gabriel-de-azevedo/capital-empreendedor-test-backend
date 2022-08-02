@@ -1,5 +1,5 @@
 /**
- *
+ * Removes target_opportunity from all_opportunities
  */
 
 export const handleDelete = (req) => {

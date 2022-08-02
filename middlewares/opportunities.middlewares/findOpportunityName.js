@@ -1,7 +1,7 @@
 import functions from '../../database/functions.js';
 
 /**
- *
+ *  Uses the opportunity_name on the URL to find the target_opportunity
  */
 
 export const findOpportunityName = async (req, res, next) => {

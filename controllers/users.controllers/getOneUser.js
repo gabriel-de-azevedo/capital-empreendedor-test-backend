@@ -1,7 +1,8 @@
 import functions from '../../database/functions.js';
 
 /**
- *
+ * Uses the user_email on the URL to find the user's opportunities
+ * Returns the target_user and his opportunities
  */
 
 export const getOneUser = async (req, res) => {

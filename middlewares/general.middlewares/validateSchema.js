@@ -1,5 +1,5 @@
 /**
- *
+ * Validates the request body based on the schema received
  */
 
 export const validateSchema = (schema) => async (req, res, next) => {

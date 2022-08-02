@@ -9,7 +9,7 @@ import { validateUserEmail } from '../../middlewares/users.middlewares/validateU
 import { userSchema } from '../../models/users.models/userSchema.js';
 
 /**
- *
+ * Adds all controller and middlewares to the users routes
  */
 
 const usersRouter = Router();

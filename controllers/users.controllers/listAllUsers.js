@@ -1,7 +1,7 @@
 import functions from '../../database/functions.js';
 
 /**
- *
+ * Tranforms the users object on the database into a list
  */
 
 export const listAllUsers = async (_req, res) => {

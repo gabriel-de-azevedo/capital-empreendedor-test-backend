@@ -1,7 +1,7 @@
 import functions from '../../database/functions.js';
 
 /**
- *
+ * Checks if the email on the request body is already in use
  */
 
 export const validateUserEmail = async (req, res, next) => {

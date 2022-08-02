@@ -1,7 +1,7 @@
 import functions from '../../database/functions.js';
 
 /**
- *
+ * Adds the opportunity on the request body to the database
  */
 
 export const addOpportunity = async (req, res) => {

@@ -1,7 +1,7 @@
 import functions from '../../database/functions.js';
 
 /**
- *
+ * Adds the user on the request body to the database
  */
 
 export const addUser = async (req, res) => {
