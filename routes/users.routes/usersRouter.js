@@ -1,18 +1,25 @@
 import { Router } from 'express';
+import { addUser } from '../../controllers/users.controllers/addUser.js';
+import { deleteUser } from '../../controllers/users.controllers/deleteUser.js';
 import { getOneUser } from '../../controllers/users.controllers/getOneUser.js';
 import { listAllUsers } from '../../controllers/users.controllers/listAllUsers.js';
-import { verifyUserEmail } from '../../middlewares/users.middlewares/verifyUserEmail.js';
+import { validateSchema } from '../../middlewares/general.middlewares/validateSchema.js';
+import { findUserEmail } from '../../middlewares/users.middlewares/findUserEmail.js';
+import { validateUserEmail } from '../../middlewares/users.middlewares/validateUserEmail.js';
+import { userSchema } from '../../models/users.models/userSchema.js';
 
 /**
- * Defines the listAllUsers controller to the first route
- * Defines the getOneUser controller to the second
- * Adds the verifyUserEmail middleware to it
+ * Adds controllers and middlewares to the users routes
  */
 
 const usersRouter = Router();
 
+usersRouter.post('', validateSchema(userSchema), validateUserEmail, addUser);
+
 usersRouter.get('', listAllUsers);
 
-usersRouter.get('/:user_email', verifyUserEmail, getOneUser);
+usersRouter.get('/:user_email', findUserEmail, getOneUser);
+
+usersRouter.delete('/:user_email', findUserEmail, deleteUser);
 
 export default usersRouter;

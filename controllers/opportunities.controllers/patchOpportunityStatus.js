@@ -1,24 +1,19 @@
 import functions from '../../database/functions.js';
-import { toggleStatusByName } from '../../services/opportunities.services/toggleStatusByName.js';
+import { handleStatusToggle } from '../../services/opportunities.services/handleStatusToggle.js';
 
 /**
- * Gets the opportunities retrived by the VerifyOpportunityName middleware
- * Retrieves user_email and opportunity_name from the URL
- * Calls the toggleStatusByName service to make the necessary changes
- * Uses functions.update to overwrite the user's opportunities
- * Returns the updated list
+ * Toggles target_opportunity's status trough the handleStatusToggle service
+ * Uses the user_email on the URL to update it's opportunities on the database
  */
 
 export const patchOpportunityStatus = async (req, res) => {
-  let { opportunities } = req;
   const { user_email } = req.params;
-  const { opportunity_name } = req.params;
 
-  opportunities = toggleStatusByName(opportunities, opportunity_name);
+  const opportunities = handleStatusToggle(req);
 
-  const updated = await functions.update('opportunities', user_email, {
+  await functions.update('opportunities', user_email, {
     opportunities,
   });
 
-  return res.status(200).json(updated);
+  return res.status(200).json({ opportunities });
 };

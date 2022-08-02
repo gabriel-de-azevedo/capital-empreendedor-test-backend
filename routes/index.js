@@ -3,12 +3,10 @@ import usersRouter from './users.routes/usersRouter.js';
 import opportunitiesRouter from './opportunities.routes/opportunitiesRouter.js';
 
 /**
- * Adds both the users and opportunities routes to router
+ * Adds all routes to the main indexRouter
  */
 
-var router = express.Router();
+export const indexRouter = express.Router();
 
-router.use('/users', usersRouter);
+indexRouter.use('/users', usersRouter);
 usersRouter.use(opportunitiesRouter);
-
-export default router;
