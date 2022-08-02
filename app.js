@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 /**
  * Adds support for Cross Origin Request Sharing
- * Adds the indexRouter routes to the app
+ * Adds all indexRouter routes to the app
  */
 
 app.use(cors());

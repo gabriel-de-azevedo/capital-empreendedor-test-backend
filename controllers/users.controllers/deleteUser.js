@@ -1,7 +1,7 @@
 import functions from '../../database/functions.js';
 
 /**
- * Uses the user_email on the URL to delete a user and his opportunities
+ * Uses the user_email on the URL to delete the user and his opportunities
  */
 
 export const deleteUser = async (req, res) => {

@@ -2,7 +2,7 @@ import functions from '../../database/functions.js';
 import { handleDelete } from '../../services/opportunities.services/handleDelete.js';
 
 /**
- * Deletes the target_opportunity trough the handleDelete service
+ * Deletes target_opportunity trough the handleDelete service
  * Uses the user_email on the URL to update it's opportunities on the database
  */
 
