@@ -11,13 +11,13 @@ export const validateOpportunityName = async (req, res, next) => {
 
   let found;
   opportunities.forEach((opp) => {
-    if (opp.name === opportunity_name) {
+    if (opp.name === name) {
       found = opp;
     }
   });
 
   if (found) {
-    return res.status(404).json({ errors: ['name already in use'] });
+    return res.status(409).json({ errors: ['name already in use'] });
   }
 
   return next();
