@@ -4,7 +4,7 @@ import functions from '../../database/functions.js';
  *
  */
 
-export const createUser = async (req, res) => {
+export const addUser = async (req, res) => {
   const { body } = req;
 
   const user = await functions.set('users', body.email, body);
