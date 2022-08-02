@@ -12,7 +12,7 @@ export const addOpportunity = async (req, res) => {
 
   opportunities.push(body);
 
-  const updated = await functions.update('opportunities', user_email, {
+  await functions.update('opportunities', user_email, {
     opportunities,
   });
 
