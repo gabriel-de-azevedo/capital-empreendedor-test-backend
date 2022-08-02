@@ -9,13 +9,15 @@ export const validateOpportunityName = async (req, res, next) => {
   const { name } = req.body;
   const { opportunities } = await functions.getOne('opportunities', user_email);
 
-  let opportunityNames = [];
+  let found;
   opportunities.forEach((opp) => {
-    opportunityNames.push(opp.name);
+    if (opp.name === opportunity_name) {
+      found = opp;
+    }
   });
 
-  if (opportunityNames.includes(name)) {
-    return res.status(409).json({ errors: ['name already in use'] });
+  if (found) {
+    return res.status(404).json({ errors: ['name already in use'] });
   }
 
   return next();
