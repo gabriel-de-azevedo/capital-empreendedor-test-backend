@@ -1,5 +1,9 @@
 import functions from '../../database/functions.js';
 
+/**
+ *
+ */
+
 export const createUser = async (req, res) => {
   const { body } = req;
 
