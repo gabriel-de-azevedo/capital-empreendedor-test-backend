@@ -15,7 +15,7 @@ export const findUserEmail = async (req, res, next) => {
     return res.status(404).json({ errors: ['user not found'] });
   }
 
-  req.user = user;
+  req.target_user = user;
 
   return next();
 };
