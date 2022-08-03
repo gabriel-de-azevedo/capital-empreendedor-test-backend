@@ -61,7 +61,7 @@ estarão exemplificadas logo abaixo:
 
 ## POST/api/users
 
-#### Verifica se todos os dados os campos estão corretamente preenchidos e se o email já não está em uso. Se tudo estiver de acordo, adiciona um novo usuário ao banco de dados
+#### Verifica se todos os campos estão corretamente preenchidos e se o "email" já não está em uso. Se tudo estiver de acordo, adiciona um novo usuário ao banco de dados
 
 _Envio:_
 
@@ -97,7 +97,7 @@ _Respota:_
 
 ## GET/api/users
 
-#### Lista todos os usuários cadastrados no banco de dados
+#### Retorna uma lista com todos os usuários
 
 _Envio:_
 
@@ -128,7 +128,7 @@ _Respota:_
 
 ## GET/api/users/:user_email
 
-### Descrição
+#### Retorna um usuário e suas oportunidades
 
 _Envio:_
 
@@ -166,7 +166,7 @@ _Respota:_
 
 ## DELETE/api/users/:user_email
 
-### Descrição
+#### Deleta um usuário do banco de dados
 
 _Envio:_
 
@@ -190,7 +190,7 @@ No body
 
 ## POST/api/users/:user_email/opportunities
 
-### Descrição
+#### Verifica se todos os campos estão corretamente preenchidos e se o "name" já não está em uso. Se tudo estiver de acordo, adiciona uma nova oportunidade ao banco de dados
 
 _Envio:_
 
@@ -226,7 +226,7 @@ _Respota:_
 
 ## PATCH/api/users/:user_email/opportunities/:opportunity_name
 
-### Descrição
+#### Inverte o valor do campo "isActive" de uma oportunidade
 
 _Envio:_
 
@@ -256,7 +256,7 @@ _Respota:_
 
 ## DELETE/api/users/:user_email/opportunities/:opportunity_name
 
-### Descrição
+#### Deleta uma oportunidade do banco de dados
 
 _Envio:_
 
