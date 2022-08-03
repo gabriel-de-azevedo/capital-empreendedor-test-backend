@@ -1,5 +1,9 @@
-# CE Test - Web Server
+# Capital Cards API
 
-## Running the server
+## Como Executar
 
-Run `npm start` or `yarn start` to run the server on `http://localhost:3000/`. The server will **not** automatically reload if you change any of the source files.
+## Funcionalidades
+
+# Como usar os Endpoints
+
+# Comentários e Observações
