@@ -61,7 +61,7 @@ estarão exemplificadas logo abaixo:
 
 ## POST/api/users
 
-### Descrição
+### Verifica se todos os dados os campos estão corretamente preenchidos e se o email do usuário já não está em uso. Se tudo estiver de acordo, adiciona um novo usuário ao banco de dados.
 
 _Envio:_
 
