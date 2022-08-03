@@ -55,7 +55,7 @@ estarão exemplificadas logo abaixo:
 
 <br>
 
-> ## Users
+> # Users
 
 <br>
 
@@ -93,8 +93,6 @@ _Respota:_
 }
 ```
 
----
-
 <br>
 
 ## GET/api/users
@@ -125,8 +123,6 @@ _Respota:_
   ]
 }
 ```
-
----
 
 <br>
 
@@ -166,8 +162,6 @@ _Respota:_
 }
 ```
 
----
-
 <br>
 
 ## DELETE/api/users/:user_email
@@ -188,11 +182,9 @@ _Respota:_
 No body
 ```
 
----
-
 <br>
 
-> ## Opportunities
+> # Opportunities
 
 <br>
 
@@ -230,8 +222,6 @@ _Respota:_
 }
 ```
 
----
-
 <br>
 
 ## PATCH/api/users/:user_email/opportunities/:opportunity_name
@@ -262,8 +252,6 @@ _Respota:_
 }
 ```
 
----
-
 <br>
 
 ## DELETE/api/users/:user_email/opportunities/:opportunity_name
@@ -283,7 +271,5 @@ _Respota:_
 ```json
 No body
 ```
-
----
 
 # Comentários e Observações
