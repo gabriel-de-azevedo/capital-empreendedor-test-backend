@@ -48,7 +48,7 @@ As rotas da API poderão ser acessadas a partir de http://localhost:4000.
 # Rotas
 
 Dentro do projeto existe uma pasta chamada "workspace" com um arquivo JSON contendo todas as rotas e alguns
-exemplos de como utilizá-las. Para fazer essa importação, será necessário utilizar a aplicação
+exemplos de como utilizá-las. Para importar esses dados, será necessário utilizar a aplicação
 [Insomnia](https://insomnia.rest/).
 Se não tiver acesso à essa aplicação ou preferir utilizar algum outro método para testar as rotas, todas elas
 estarão exemplificadas logo abaixo:
