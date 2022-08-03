@@ -275,3 +275,32 @@ No body
 <br>
 
 # Comentários e Observações
+
+Logo no início do projeto, minha ideia original era desenvolver toda a aplicação usando TypeScript e ESLint. Eu
+já fiz algumas aplicações usando os dois enquanto estudava na Kenzie (como
+[essa aqui](https://github.com/Kenzie-Academy-Brasil-Developers/q4-sprint1-kenzify-azgabe)
+) e imaginei que não teria muita dificuldade , mas tive alguns problemas com a configuração e decidi ainda no
+primeiro dia que ia deixar isso de lado.
+Isso porque nesse dia mesmo recebi a notícia de que seria interessante fazer o Front-End também e, como já fazia
+vários meses que eu nem abria uma aplicação React, optei por começar logo o projeto, mesmo sem esses extras, para
+garantir que teria tempo de entregar tudo, caso tivesse alguma dificuldade com o Front.
+
+No Back-End, a primeira coisa que fiz foi alterar o padrão de importação do projeto de commonJS para ES6, usando um
+pacote chamado "cjs-to-es6". Atualmente ele já não recebe mais suporte e também não consegue converter absolutamente
+tudo corretamente mas, para esse projeto mais pequeno, ele me atendeu bem e fez quase tudo automaticamente. Depois
+disso, organizei o projeto da forma que eu normalmente trabalho com Express e já comecei a implementar as rotas
+básicas para o Front funcionar.
+
+Tive que fazer algumas alterações durante a integração com o Front, como trocar a porta padrão que o Back iria rodar
+e instalar a biblioteca "cors" para permitir Cross Origin Request Sharing. Além disso, também "limpei" algumas das
+respostas da API para facilitar na hora de receber esses dados.
+
+Só depois que concluí o Front foi que retornei para o Back. Quis usar todas as funções fornecidas no projeto original
+e também trabalhar um pouco com a validação de dados usando a biblioteca "yup". Como eu ainda tinha um dia "extra" no
+meu cronograma, usei ele para implementar tanto as rotas de adição quanto deleção de recursos.
+
+Finalmente, o último dia eu tirei principalmente para trabalhar na documentação e revisar alguns comentários, além de
+testar toda a aplicação uma última vez para ter certeza que ficou tudo funcionando certinho.
+
+Agradeço desde já a oportunidade de mostrar um pouco do que consigo fazer e fico a disposição para fazer qualquer outro
+teste ou esclarecer quaisquer dúvidas que tenham sobre meus conhecimentos técnicos.
