@@ -4,6 +4,6 @@
 
 ## Funcionalidades
 
-# Como usar os Endpoints
+# Endpoints
 
 # Comentários e Observações
