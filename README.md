@@ -7,7 +7,7 @@ arquivos públicos e uma biblioteca responsável pelas operações de leitura e 
 
 As rotas nessa aplicação foram incialmente desenvolvidas pensando em cobrir apenas as necessidades básicas
 solicitadas: a listagem de todos os usuários, a listagem das oportunidades de um usuário e a alteração do
-status de uma oportunidade. Porém, também foram adicionadas rotas de adição e deleção de recursos, procurando
+status de uma oportunidade. Porém, também foram criadas rotas de adição e deleção de recursos, procurando
 usar todas as funções incluídas na biblioteca de manipulação do banco dados.
 
 Com o objetivo do teste técnico em mente, foram adicionados breves comentários em inglês em cada arquivo
