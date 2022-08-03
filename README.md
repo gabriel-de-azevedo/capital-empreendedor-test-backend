@@ -45,6 +45,245 @@ As rotas da API poderão ser acessadas a partir de http://localhost:4000.
 
 <br/>
 
-# Endpoints
+# Rotas
+
+Dentro do projeto existe uma pasta chamada "workspace" com um arquivo JSON contendo todas as rotas e alguns
+exemplos de como utilizá-las. Para fazer essa importação, será necessário utilizar a aplicação
+[Insomnia](https://insomnia.rest/).
+Se não tiver acesso à essa aplicação ou preferir utilizar algum outro método para testar as rotas, todas elas
+estarão exemplificadas logo abaixo:
+
+<br>
+
+> ## Users
+
+<br>
+
+## POST/api/users
+
+### Descrição
+
+_Envio:_
+
+```json
+{
+  "name": string,
+  "email": strig,
+  "isActive": boolean,
+  "phone": string,
+  "revenue": number,
+  "agreedTerms": boolean
+}
+```
+
+_Respota:_
+
+> 201
+
+```json
+{
+  "user": {
+    "name": string,
+    "email": strig,
+    "isActive": boolean,
+    "phone": string,
+    "revenue": number,
+    "agreedTerms": boolean
+  }
+}
+```
+
+---
+
+<br>
+
+## GET/api/users
+
+### Descrição
+
+_Envio:_
+
+```json
+No body
+```
+
+_Respota:_
+
+> 200
+
+```json
+{
+  "users": [
+    {
+      "name": string,
+      "email": strig,
+      "isActive": boolean,
+      "phone": string,
+      "revenue": number,
+      "agreedTerms": boolean
+    }
+  ]
+}
+```
+
+---
+
+<br>
+
+## GET/api/users/:user_email
+
+### Descrição
+
+_Envio:_
+
+```json
+No body
+```
+
+_Respota:_
+
+> 200
+
+```json
+{
+  "user": {
+    "name": string,
+    "email": string,
+    "isActive": boolean,
+    "phone": string,
+    "revenue": number,
+    "agreedTerms": boolean
+  },
+  "opportunities": [
+    {
+      "name": string,
+      "limit": number,
+      "interest": number,
+      "term": number,
+      "isActive": boolean
+    }
+  ]
+}
+```
+
+---
+
+<br>
+
+## DELETE/api/users/:user_email
+
+### Descrição
+
+_Envio:_
+
+```json
+No body
+```
+
+_Respota:_
+
+> 204
+
+```json
+No body
+```
+
+---
+
+<br>
+
+> ## Opportunities
+
+<br>
+
+## POST/api/users/:user_email/opportunities
+
+### Descrição
+
+_Envio:_
+
+```json
+{
+  "name": string,
+  "limit": number,
+  "interest": number,
+  "term": number,
+  "isActive": boolean
+}
+```
+
+_Respota:_
+
+> 201
+
+```json
+{
+  "opportunities": [
+    {
+      "name": string,
+      "limit": number,
+      "interest": number,
+      "term": number,
+      "isActive": boolean
+    }
+  ]
+}
+```
+
+---
+
+<br>
+
+## PATCH/api/users/:user_email/opportunities/:opportunity_name
+
+### Descrição
+
+_Envio:_
+
+```json
+No body
+```
+
+_Respota:_
+
+> 200
+
+```json
+{
+  "opportunities": [
+    {
+      "name": string,
+      "limit": number,
+      "interest": number,
+      "term": number,
+      "isActive": boolean
+    }
+  ]
+}
+```
+
+---
+
+<br>
+
+## DELETE/api/users/:user_email/opportunities/:opportunity_name
+
+### Descrição
+
+_Envio:_
+
+```json
+No body
+```
+
+_Respota:_
+
+> 204
+
+```json
+No body
+```
+
+---
 
 # Comentários e Observações
