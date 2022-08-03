@@ -61,7 +61,7 @@ estarão exemplificadas logo abaixo:
 
 ## POST/api/users
 
-#### Verifica se todos os dados os campos estão corretamente preenchidos e se o email já não está em uso. Se tudo estiver de acordo, adiciona um novo usuário ao banco de dados.
+#### Verifica se todos os dados os campos estão corretamente preenchidos e se o email já não está em uso. Se tudo estiver de acordo, adiciona um novo usuário ao banco de dados
 
 _Envio:_
 
@@ -97,7 +97,7 @@ _Respota:_
 
 ## GET/api/users
 
-#### Lista todos os usuários cadastrados no banco de dados.
+#### Lista todos os usuários cadastrados no banco de dados
 
 _Envio:_
 
