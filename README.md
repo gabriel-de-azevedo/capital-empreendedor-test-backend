@@ -278,7 +278,7 @@ No body
 
 Logo no início do projeto, minha ideia original era desenvolver toda a aplicação usando TypeScript e ESLint. Eu
 já fiz algumas aplicações usando os dois enquanto estudava na Kenzie (como
-[essa aqui](https://github.com/Kenzie-Academy-Brasil-Developers/q4-sprint1-kenzify-azgabe)
+[essa aqui](https://github.com/gabriel-de-azevedo/capstone-node)
 ) e imaginei que não teria muita dificuldade , mas tive alguns problemas com a configuração e decidi ainda no
 primeiro dia que ia deixar isso de lado.
 Isso porque nesse dia mesmo recebi a notícia de que seria interessante fazer o Front-End também e, como já fazia
