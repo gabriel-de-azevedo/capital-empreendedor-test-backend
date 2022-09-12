@@ -10,10 +10,6 @@ solicitadas: a listagem de todos os usuários, a listagem das oportunidades de u
 status de uma oportunidade. Porém, também foram criadas rotas de adição e deleção de recursos, procurando
 usar todas as funções incluídas na biblioteca de manipulação do banco dados.
 
-Com o objetivo do teste técnico em mente, foram adicionados breves comentários em inglês em cada arquivo
-JavaScript descrevendo sua funcionalidade. A última parte dessa documentação também possui alguns comentários
-e observações sobre as decisões e comprometimentos feitos durante o processo de desenvolvimento.
-
 <br/>
 
 ## Funcionalidades
